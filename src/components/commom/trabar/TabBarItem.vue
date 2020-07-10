@@ -44,5 +44,11 @@
 <style scoped>
   .tab-bar-item{
    text-align: center;
+    width: 100%;
+    background-color: white;
+  }
+  .tab-bar-item > img{
+    width: 80%;
+    height: 100%;
   }
 </style>
