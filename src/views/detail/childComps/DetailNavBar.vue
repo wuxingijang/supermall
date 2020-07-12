@@ -3,12 +3,13 @@
         <Navbar>
             <div slot="center" class='title'>
                 <div v-for='(item,index) in titles'
-                :class="{active:index===currentIndex}" @click='titleclick(index)'>{{ item}}</div>
+                :class="{active:index===currentIndex}" @click='titleclick(index)'>{{ item}}
+                </div>
             </div>
             <div slot="left" class="titleico" @click="back">
               <img src="~assets/img/detail/back.svg" alt="">
             </div>
-            <div slot="right">AA</div>
+            <div slot="right"></div>
         </Navbar>
     </div>
 </template>
@@ -18,7 +19,7 @@ export default {
     name:"DetaiNavBar",
     data(){
         return{
-            titles:['商品','参数','评论','推荐'],
+            titles:['商品','评论','介绍'],
             currentIndex:0
         }
     },
@@ -28,7 +29,9 @@ export default {
     methods:{
         titleclick(index){
                 this.currentIndex=index
+                this.$emit('titleclick',index)
         },
+
       back(){
           this.$router.go(-1)
       }

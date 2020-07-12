@@ -1,7 +1,7 @@
 <template>
   <div class="goodslist">
     <img src="~assets/img/home/recommendation.png" alt="">
-    <goodslist v-for=" item in goodslist" :item='item'></goodslist>
+    <goodslist v-for=" item in goodslist" :item='item' ></goodslist>
   </div>
 </template>
 <script>
@@ -18,7 +18,9 @@ export default {
         }
     },
     methods:{
-     
+     loading(){
+       console.log(1)
+     }
     },
 
   mounted() {

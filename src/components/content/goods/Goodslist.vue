@@ -22,6 +22,9 @@ export default {
        this.$router.push('/detail/'+this.item[0])
        console.log(this.$router);
 
+      },
+      loading(){
+        this.$emit('loading')
       }
     }
 }

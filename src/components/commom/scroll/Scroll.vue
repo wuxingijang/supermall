@@ -21,7 +21,6 @@ export default {
        }
    },
    methods:{
-
     //scrollTo可以设置x,y的位置(x,y,ms)
     scrollTo(x,y,time=2000){
         this.scroll.scrollTo(x,y,time)

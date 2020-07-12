@@ -72,7 +72,6 @@
          })
 
         },
-
         //菜单信息
         getment(){
           gethomeMultidata().then(res=>{
@@ -142,6 +141,7 @@
   min-width: 200px;
   height: 100vh;
   position: relative;
+  -webkit-overflow-scrolling : touch
 }
 .warpper-centent{
   overflow: hidden;
